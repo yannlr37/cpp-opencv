@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sources/Image.o: sources/Image.cpp.o
+
+.PHONY : sources/Image.o
+
+# target to build an object file
+sources/Image.cpp.o:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/sources/Image.cpp.o
+.PHONY : sources/Image.cpp.o
+
+sources/Image.i: sources/Image.cpp.i
+
+.PHONY : sources/Image.i
+
+# target to preprocess a source file
+sources/Image.cpp.i:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/sources/Image.cpp.i
+.PHONY : sources/Image.cpp.i
+
+sources/Image.s: sources/Image.cpp.s
+
+.PHONY : sources/Image.s
+
+# target to generate assembly for a file
+sources/Image.cpp.s:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/sources/Image.cpp.s
+.PHONY : sources/Image.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sources/Image.o"
+	@echo "... sources/Image.i"
+	@echo "... sources/Image.s"
 .PHONY : help
 
 
