@@ -1,0 +1,6 @@
+!build/.gitkeep
+build/
+opencv/
+opencv_contrib/
+CMakeFiles/
+CMakeCahe.txt
