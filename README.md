@@ -1,4 +1,25 @@
-# Install OpenCV on Linux
+# Sample code for Image Processing using OpenCV and C++
+
+## Build project
+
+```
+git clone <this_repository>
+cd <folder>
+make
+./DisplayImage
+```
+
+You should see this : 
+
+![Results](images/display.png)
+
+
+and this in terminal :
+
+![Results](images/terminal.png)
+
+
+## Install OpenCV on Linux
 
 0 - créate sample code for tests : 
  
@@ -94,8 +115,4 @@ cd <DisplayImage_directory> cmake . make
 ./DisplayImage
 ```
 
-
-And enjoy ;)
-
-
-
+11 - enjoy ;)
