@@ -7,10 +7,27 @@ Image::Image ()
 {
 }
 
+Image::~Image ()
+{
+}
+
 void Image::load()
 {
 	m_image = cv::imread("images/" + m_name, 1);
 	getDimensions();
+}
+
+void Image::equalizeHistogram()
+{
+	cv::Mat channels[3];
+	cv::Mat output_channels[3];
+	cv::split(m_image, channels);
+
+	for (int index = 0; index < 3; index++) {
+		cv::equalizeHist( channels[index], output_channels[index] );	
+	}
+
+	cv::merge(output_channels, 3, m_image);
 }
 
 void Image::display()

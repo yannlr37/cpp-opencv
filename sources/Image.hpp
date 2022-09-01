@@ -10,7 +10,9 @@ class Image {
 	
 	public:
 		Image();
+		~Image();
 		void load();
+		void equalizeHistogram();
 		void display();
 		void printInfos();
 
